@@ -55,6 +55,7 @@ export function buildEnvVars(env: MoltbotEnv): Record<string, string> {
   if (env.APIFY_API_KEY) envVars.APIFY_API_KEY = env.APIFY_API_KEY;
   if (env.INSTANTLY_API_KEY) envVars.INSTANTLY_API_KEY = env.INSTANTLY_API_KEY;
   if (env.MILLION_VERIFIER_API_KEY) envVars.MILLION_VERIFIER_API_KEY = env.MILLION_VERIFIER_API_KEY;
+  if (env.OPENROUTER_API_KEY) envVars.OPENROUTER_API_KEY = env.OPENROUTER_API_KEY;
 
   return envVars;
 }

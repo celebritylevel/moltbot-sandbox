@@ -47,6 +47,7 @@ export interface MoltbotEnv {
   APIFY_API_KEY?: string;
   INSTANTLY_API_KEY?: string;
   MILLION_VERIFIER_API_KEY?: string;
+  OPENROUTER_API_KEY?: string;
 }
 
 /**
