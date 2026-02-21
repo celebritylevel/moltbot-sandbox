@@ -42,6 +42,11 @@ export interface MoltbotEnv {
   BROWSER?: Fetcher;
   CDP_SECRET?: string; // Shared secret for CDP endpoint authentication
   WORKER_URL?: string; // Public URL of the worker (for CDP endpoint)
+  // External service API keys for OpenClaw skills
+  APOLLO_API_KEY?: string;
+  APIFY_API_KEY?: string;
+  INSTANTLY_API_KEY?: string;
+  MILLION_VERIFIER_API_KEY?: string;
 }
 
 /**

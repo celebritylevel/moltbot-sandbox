@@ -50,5 +50,11 @@ export function buildEnvVars(env: MoltbotEnv): Record<string, string> {
   if (env.CDP_SECRET) envVars.CDP_SECRET = env.CDP_SECRET;
   if (env.WORKER_URL) envVars.WORKER_URL = env.WORKER_URL;
 
+  // External service API keys for OpenClaw skills
+  if (env.APOLLO_API_KEY) envVars.APOLLO_API_KEY = env.APOLLO_API_KEY;
+  if (env.APIFY_API_KEY) envVars.APIFY_API_KEY = env.APIFY_API_KEY;
+  if (env.INSTANTLY_API_KEY) envVars.INSTANTLY_API_KEY = env.INSTANTLY_API_KEY;
+  if (env.MILLION_VERIFIER_API_KEY) envVars.MILLION_VERIFIER_API_KEY = env.MILLION_VERIFIER_API_KEY;
+
   return envVars;
 }
